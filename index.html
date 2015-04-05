@@ -1,51 +1,133 @@
-<!doctype html>
+<html><head>
+  <style type="text/css">
+    
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Varela Round", sans-serif;
+    background-color: #eee;
+    display: flex;
+}
 
-<html>
+a {
+    text-decoration: none;
+}
 
-<head>
-    <title>Cieara Meador</title>
+img {
+    border: 0;
+}
+  
+.logo {
+    text-align: center;
+}
 
-    <style type="text/css">
-        body {
-            margin: 0 auto;
-            margin-left: 1em;
-            margin-right: 1em;
-            font-family: "Open Sans", sans-serif;
-            color: #333;
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #888;
+}
+
+.side {
+    background-color: #2d3136;
+    padding: 0.5em;
+    flex: 0 0 auto;
+    order: -1;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: "Varela Round", sans-serif;
+}
+  
+nav a {
+    display: block;
+    margin: 0.25em;
+    padding: 0.25em;
+    color: #aaa; 
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #e886a2;
+    transition: 0.5s;
+}
+
+article {
+    max-width: 40rem;
+    padding: 0.5em;
+    flex: 1 1;
+}
+
+h1 {
+    font-size: 1.7em;
+    color: #da4a7a;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+
+	body {
+                flex-direction: column;
+	}
+
+        nav {
+            flex: 1 1 auto;
         }
 
-        h1 {
-            color: #f66;
-        }
+            nav a {
+                margin: 0.5em;
+            }
 
-        h2 {
-            color: #555;
-        }
+}
 
-    </style>
+::selection {
+    background: #edcdd1;
+}
 
+::-moz-selection {
+    background: #edcdd1;
+}
+    
+    
+  </style>
 </head>
-
 <body>
+  
+  <article>
+      <h1>hi there!</h1>
+      <p>this is my website. neato.</p>
 
-    <h1>Hey!</h1>
+      <h2>some cool thing</h2>
+      <p>cool beans cool beans</p>
 
-    <p>I brought my site offline for a while while i get it to a slightly more 
-        finished state. I have too much left to do to do incremental pushes 
-        (which is what i have been doing) and still have it look presentable 
-        (it currently does not). 
-
-    <h2>Get in touch</h2>
-
-    <strong>email:</strong> me @ this domain | 
-    <strong>twit:</strong> <a href="http://www.twitter.com/cmkmeador">cmkmeador</a> | 
-    <strong>github: </strong> <a href="http://www.github.com/cmkm">cmkm</a>
-
-
-
-
-
-
+      <h3>man i need to go to bed</h3>
+      <p>im so tired</p>
+  </article> 
+  
+  <div class="side"> 
+      <h1 class="logo">
+        <a href="/">
+            <img src="logo.png">
+        </a>
+      </h1>
+      
+      <nav>
+        <a href="#">work</a>
+        <a href="#">blog</a>
+        <a href="#">contact</a>
+      </nav>
+  </div>
 </body>
-
 </html>
