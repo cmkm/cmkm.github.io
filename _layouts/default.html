@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  
+  <article>
+      {{ content }} 
+  </article> 
+  
+  <div class="side"> 
+      <h1 class="logo">
+        <a href="/">
+            <img src="/img/logo.png">
+        </a>
+      </h1>
+      
+      <nav>
+        <a href="/work">work</a>
+        <a href="/blog">blog</a>
+        <a href="/contact">contact</a>
+      </nav>
+  </div>
+</body>
 </html>
