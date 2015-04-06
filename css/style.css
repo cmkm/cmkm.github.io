@@ -6,7 +6,7 @@ body {
     font-family: "Varela Round", sans-serif;
     background-color: #eee;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 a {
@@ -95,6 +95,10 @@ h3 {
     font-size: 1.3em;
 }
 
+h2, h3 {
+    margin-bottom: 0.5em;
+}
+
 .contact-links a {
     display: block;
     margin: 0.5em;
@@ -105,6 +109,11 @@ h3 {
         vertical-align: middle;
         margin-right: 0.3em;
     }
+
+.subtitle {
+    font-style: italic;
+    color: #333;
+}
 
 /* small screens */
 @media (max-width: 768px) {

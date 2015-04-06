@@ -2,4 +2,25 @@
 layout: default
 ---
 
-Filling this in soon!
+<h1>work</h1>
+
+<h2>projects</h2>
+{% for project in site.data.projects %}
+<h3>{{ project.title }}</h3>
+<span class="subtitle">{{ project.subtitle }}</span>
+<p>{{ project.desc }}</p>
+{% if project.site %}
+<p><strong>Site:</strong> 
+    <a href="{{ project.site }}">{{ project.site }}</a></p>
+{% endif %}
+{% if project.github %}
+<p><strong>Github:</strong> 
+    <a href="{{ project.github }}">{{ project.github }} </a></p>
+{% endif %}
+{% endfor %}
+
+<h2>design</h2>
+{% for doodle in site.data.doodles %}
+<h3>{{ doodle.title }}</h3>
+<p>{{ doodle.desc }}</p>
+{% endfor %}
