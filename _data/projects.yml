@@ -1,0 +1,25 @@
+- title: snappy
+  subtitle: CSCI3321 Software Engineering project
+  desc: Contributed to group project for semester-long 
+      software engineering development example. Design 
+      and development. 
+  github: http://github.com/cmkm/snappy
+  imgslug: snappy
+
+- title: pineapple bike rentals
+  subtitle: ENGL3720 Business & Tech Writing project
+  desc: Semester-long group business development project. 
+      Responsible for design and branding.
+  imgslug: pineapple
+
+- title: nursery web design
+  subtitle: standalone mock web design
+  desc: A quick and never-entirely-finished web design for 
+      a fake plant nursery.
+  imgslug: nursery
+
+- title: horizon music recording
+  subtitle: CSCI2070 Ethics and Cybersecurity project
+  desc: Quick web design for individual project as part of 
+    semester-long group mock business design for a class. 
+    Logo design not mine.
