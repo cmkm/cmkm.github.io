@@ -1,23 +1,48 @@
 ---
 layout: default
 ---
-<h1>blog</h1>
+<h1 class="blog-header">blog</h1>
+
+<a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">rss</a>
 
 <ul class="posts">
     {% for post in site.posts %}
     <li>
-        <span class="post-meta">
-            {{ post.date | date: "%b %-d, %Y" }}
-        </span>
-
         <h2>
             <a class="post-link" 
                 href="{{ post.url | prepend: site.baseurl }}">
                 {{ post.title }}
             </a>
         </h2>
+
+        <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.tags.size > 0 %}
+                | tagged: 
+                {% for tag in post.tags %}
+                    {{ tag }}
+                    {% if post.tags.size > 1 %}
+                         ,
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </span>
+
+        <p class="excerpt">
+            {{ post.excerpt }}
+        </p>
+
+        <p class="read-more-link">
+            <a href="{{ post.url }}">Continue reading &rarr;</a>
+        </p>
     </li>
+
+    {% if site.posts.size > 1 %}
+        {% if forloop.last == false %}
+            <hr>
+        {% endif %}     
+    {% endif %}
+
     {% endfor %}
 </ul>
 
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">rss</a></p>

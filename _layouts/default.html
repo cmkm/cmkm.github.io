@@ -3,6 +3,9 @@
 <head>
     <title>{{ site.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    {% if page.code %}
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+    {% endif %}
 </head>
 <body>
   

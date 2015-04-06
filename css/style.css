@@ -35,6 +35,29 @@ img {
     border: 0;
 }
   
+code {
+    font-family: "Inconsolata", monospace;
+    color: #555;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.highlight {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 2px 0 2px;
+}
+
+    .highlight code {
+        border: 0;
+    }
+
+    .highlight pre {
+        margin: 2px 0 2px 0;
+    }
+
 .logo {
     text-align: center;
 }
@@ -113,6 +136,32 @@ h2, h3 {
 .subtitle {
     font-style: italic;
     color: #333;
+}
+
+.post-title {
+    margin-bottom: 0.5em;
+}
+
+.post-meta {
+    font-style: italic;
+    color: #666;
+    margin-top: 0;
+}
+
+.blog-header {
+    margin-bottom: 0.5em;
+}
+
+.posts {
+    list-style: none;
+    padding: 0;
+}
+
+    .posts h2 {
+        margin-bottom: 0.2em;
+    }
+
+.rss-link {
 }
 
 /* small screens */
