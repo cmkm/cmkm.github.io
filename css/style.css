@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
 body {
     margin: 0;
     font-size: 20px;
@@ -76,7 +78,7 @@ nav a:hover {
 
 article {
     max-width: 40rem;
-    padding: 0.5em;
+    padding: 0.5em 1em 0.5em 1em; 
     flex: 1 1;
 }
 
@@ -92,6 +94,17 @@ h2 {
 h3 {
     font-size: 1.3em;
 }
+
+.contact-links a {
+    display: block;
+    margin: 0.5em;
+}
+
+    .contact-links a img {
+        max-width: 60px;
+        vertical-align: middle;
+        margin-right: 0.3em;
+    }
 
 /* small screens */
 @media (max-width: 768px) {
