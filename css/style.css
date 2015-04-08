@@ -164,8 +164,8 @@ h2, h3 {
 .rss-link {
 }
 
-/* small screens */
-@media (max-width: 768px) and (orientation: portrait) {
+/* skinny screens */
+@media (orientation: portrait) {
 
 	body {
                 flex-direction: column;
